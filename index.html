@@ -1,90 +1,29 @@
-
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Documentation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Sidebar navigation -->
-  <nav>
-    <!-- Title in the sidebar -->
-    <div class="sidebar-title">Documentation</div>
-    <ul>
-      <li><a href="#introduccion">Introduction</a></li>
-      <li><a href="#instalacion">Installation</a></li>
-      <li><a href="#uso">Usage</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a onclick="window.location.href = './documentation.html'" style="cursor: pointer;">Documentation</a></li>
-    </ul>
-  </nav>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
 
-  <!-- Main content -->
-  <div class="content">
-    <!-- Header -->
-    <header>
-      <h1>Project Documentation</h1>
-    </header>
+            body {
+                background: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
 
-    <!-- Introduction Section -->
-    <section id="introduccion">
-      <h2>Introduction</h2>
-      <p>This is the documentation for the project. On this site, you will find all the necessary information to install and use the project.</p>
-    </section>
+        <title>Biscuit.js</title>
+    </head>
+    <body>
+        <canvas width="500" height="500" id="a"></canvas>
 
-    <!-- Installation Section -->
-    <section id="instalacion">
-      <h2>Installation</h2>
-      <p>For installing the module, follow these steps:</p>
-      <ol>
-        <li>Run <code>npm install @tizianoluziramos/tslproject</code> to install the dependencies.</li>
-      </ol>
-    </section>
+        <script src="./js/unminified/lib.js"></script>
 
-    <!-- Usage Section -->
-    <section id="uso">
-      <h2>Usage</h2>
-      <p>Once you have installed the project, you can use it as follows:</p>
-      <ul>
-        <li>Go to <code>http://localhost:3000</code> to view the application.</li>
-        <li>Explore the available features in the navigation panel.</li>
-      </ul>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-      <h2>FAQ</h2>
-      <button id="faq-toggle">Show/Hide Answers</button>
-      <div id="faq-content">
-        <h3>How can I contribute to the project?</h3>
-        <p>You can contribute by creating a fork of the repository, making your changes, and then submitting a pull request.</p>
-
-        <h3>Where can I report bugs?</h3>
-        <p>Bugs can be reported in the <a href="https://github.com/tizianoluziramos/TypeScript-Lenguage-Proyect/issues">Issues</a> section on GitHub.</p>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 TypeScript Language Project. All rights reserved.</p>
-  </footer>
-
-  <!-- JS Script -->
-  <script>
-    document.getElementById('faq-toggle').addEventListener('click', function() {
-      const faqContent = document.getElementById('faq-content');
-      if (faqContent.style.display === 'block') {
-        faqContent.style.display = 'none';
-      } else {
-        faqContent.style.display = 'block';
-      }
-    });
-  </script>
-
-</body>
+        <script src="./js/unminified/index.js"></script>
+    </body>
 </html>
