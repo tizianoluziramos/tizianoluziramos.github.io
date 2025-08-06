@@ -3,9 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
+    <title>Tiziano Luzi Ramos | Full Stack Developer Portfolio</title>
+    <meta
+      name="description"
+      content="I'm Tiziano Luzi Ramos, a full-stack developer passionate about building modern, scalable, and accessible web applications. View my skills, projects, and certifications."
+    />
+    <meta name="author" content="Tiziano Tomas Luzi Ramos" />
+    <meta
+      name="keywords"
+      content="Tiziano Luzi Ramos, Full Stack Developer, Web Developer, Portfolio, JavaScript, TypeScript, Node.js, GitHub, Projects, CV, Certificates"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Tiziano Luzi Ramos | Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore my web development portfolio, including projects, skills, and certifications."
+    />
+    <meta
+      property="og:image"
+      content="https://tizianoluziramos.github.io/assets/og-image.png"
+    />
+    <meta property="og:url" content="https://tizianoluziramos.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tiziano Luzi Ramos | Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Check out my portfolio including web projects, skills, and certificates."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tizianoluziramos.github.io/assets/og-image.png"
+    />
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://tizianoluziramos.github.io/" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="tabs">
@@ -14,51 +59,35 @@
         <button class="tab-btn" data-tab="social-media">Social media</button>
         <button class="tab-btn" data-tab="projects">Projects</button>
         <button class="tab-btn" data-tab="certificates">Certificates</button>
+        <button class="tab-btn" data-tab="contact">Contact</button>
       </div>
 
-      <div id="certificates" class="tab-content">
-        <h2>My Certificates</h2>
-        <div class="certificates-list">
-          <div class="certificate-item">
-            <img
-              src="/assets/certificates/Full Stack Certification.jpg"
-              alt="Certificado 1"
-              class="certificate-image"
-            />
-            <h3>Full Stack Certification</h3>
-            <p>Full Stack Developer Certification</p>
-          </div>
-          <div class="certificate-item">
-            <img
-              src="/assets/certificates/foundationalcppmicrosoftcertification.png"
-              alt="Certificado 1"
-              class="certificate-image"
-            />
-            <h3>Foundational C# with Microsoft</h3>
-            <p>C# Microsoft Certification</p>
-          </div>
+      <div id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p>
+          If you have any questions or just want to say hi, feel free to contact
+          me:
+        </p>
+        <form
+          action="https://formsubmit.co/tizianoluziramos@gmail.com"
+          method="POST"
+          id="contact-form"
+        >
+          <input type="hidden" name="_captcha" value="false" />
 
-          <div class="certificate-item">
-            <img
-              src="/assets/certificates/ScrumFundamentsCertifiedByScrumStudy.jpg"
-              alt="Scrum Fundaments Certified"
-              class="certificate-image"
-            />
-            <h3>Scrum Fundaments Certified by Scrum Study</h3>
-            <p>Scrum Fundaments Certification</p>
-          </div>
-
-          <div class="certificate-item">
-            <img
-              src="/assets/certificates/Tiziano Tomas Luzi Ramos - Scrum Master Certification - Certificate_page-0001.jpg"
-              alt="Scrum Fundaments Certified"
-              class="certificate-image"
-            />
-            <h3>Scrum Master Certification</h3>
-            <p>Scrum Master certificate.</p>
-          </div>
-        </div>
+          <label>
+            Your email:
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </div>
+
+      <div id="certificates" class="tab-content"></div>
 
       <div id="skills" class="tab-content">
         <h2>Skills & Tools</h2>
@@ -163,16 +192,12 @@
           trends or enjoying some good music.
         </p>
         <p>
-          With a strong foundation in JavaScript and fullstack development, I
-          enjoy solving complex problems and building projects that make a
-          difference. My journey has led me to work with frameworks like Node.js
-          and Express, constantly pushing myself to learn and improve.
-        </p>
-        <p>
           Outside of programming, I’m interested in gaming, open source
-          contributions, and occasionally dabbling in design and UX. I'm always
-          open to collaborations and new opportunities — feel free to reach out!
+          contributions, and occasionally dabbling in UI/UX. I'm always open to
+          collaborations and new opportunities — feel free to reach out!
         </p>
+        <h2>Dedications:</h2>
+        <p>A very good Back-End developer.</p>
       </div>
 
       <div id="social-media" class="tab-content">
@@ -292,7 +317,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
