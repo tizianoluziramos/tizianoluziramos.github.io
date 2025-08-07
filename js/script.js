@@ -69,3 +69,14 @@ renderSkills("runtime-environments", skillsData.runtimeenvironments);
 renderSkills("tools", skillsData.tools);
 renderSkills("operative-systems", skillsData.operatingSystems);
 renderCertificates(certificatesData);
+
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  preloader.style.opacity = "0";
+  preloader.style.pointerEvents = "none";
+
+  // Para que desaparezca con transición suave
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500);
+});
