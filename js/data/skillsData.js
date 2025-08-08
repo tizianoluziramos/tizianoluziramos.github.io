@@ -33,6 +33,11 @@ export const skillsData = {
       ],
     },
     {
+      name: "C++",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      projects: [],
+    },
+    {
       name: "Front-End",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       projects: [
