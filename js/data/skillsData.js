@@ -48,10 +48,10 @@ export const skillsData = {
       ],
     },
   ],
-  runtimeenvironments: [
+  frameworks: [
     {
       name: "Express.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
       projects: [
         {
           name: "Games API",
@@ -59,6 +59,8 @@ export const skillsData = {
         },
       ],
     },
+  ],
+  runtimeenvironments: [
     {
       name: "Node.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",

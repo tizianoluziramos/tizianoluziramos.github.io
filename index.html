@@ -47,8 +47,6 @@
     <link rel="icon" href="/assets/og-image.png" type="image/x-icon" />
 
     <link rel="canonical" href="https://tizianoluziramos.github.io/" />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -62,7 +60,45 @@
         <button class="tab-btn" data-tab="social-media">Social media</button>
         <button class="tab-btn" data-tab="projects">Projects</button>
         <button class="tab-btn" data-tab="certificates">Certificates</button>
+        <button class="tab-btn" data-tab="coding-stats">My coding stats</button>
         <button class="tab-btn" data-tab="contact">Contact</button>
+      </div>
+
+      <div id="coding-stats" class="tab-content">
+        <h2>My Coding Stats</h2>
+        <p>
+          Here you can see my activity and progress on different coding
+          platforms.
+        </p>
+
+        <section class="stats-section">
+          <h3>GitHub</h3>
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=tizianoluziramos&show_icons=true&theme=radical"
+            alt="GitHub Stats"
+          />
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=tizianoluziramos&layout=compact&theme=radical"
+            alt="Top Languages"
+          />
+          <img
+            src="https://streak-stats.demolab.com?user=tizianoluziramos&theme=radical&hide_border=true"
+            alt="GitHub Streak"
+          />
+        </section>
+
+        <section class="stats-section">
+          <h3>LeetCode</h3>
+          <img
+            src="https://leetcard.jacoblin.cool/tizianotomasluziramos?theme=dark&font=Montserrat&ext=contest"
+            alt="LeetCode Stats"
+          />
+        </section>
+
+        <section class="stats-section">
+          <h3>Other Platforms</h3>
+          <p>More stats coming soon...</p>
+        </section>
       </div>
 
       <div id="contact" class="tab-content">
@@ -97,6 +133,9 @@
 
         <h3>Programming Languages</h3>
         <div class="skills-grid" id="programming-languages"></div>
+
+        <h3>Frameworks</h3>
+        <div class="skills-grid" id="frameworks"></div>
 
         <h3>Runtime Environments</h3>
         <div class="skills-grid" id="runtime-environments"></div>

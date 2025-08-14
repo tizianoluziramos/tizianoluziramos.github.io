@@ -7,7 +7,7 @@ function openModal(skill) {
   modalProjects.innerHTML = "";
 
   if (skill.projects.length === 0) {
-    modalProjects.innerHTML = "<li>No hay proyectos registrados.</li>";
+    modalProjects.innerHTML = "<li>There is no projects registered.</li>";
   } else {
     skill.projects.forEach((proj) => {
       const li = document.createElement("li");
@@ -32,7 +32,7 @@ export function renderSkills(containerId, skills) {
     div.classList.add("skill-item");
     div.setAttribute("tabindex", "0");
     div.setAttribute("role", "button");
-    div.setAttribute("aria-label", `Ver proyectos con ${skill.name}`);
+    div.setAttribute("aria-label", `See projects with ${skill.name}`);
 
     div.innerHTML = `
       <img src="${skill.logo}" alt="${skill.name} logo" />

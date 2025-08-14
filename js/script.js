@@ -68,6 +68,7 @@ renderSkills("programming-languages", skillsData.programmingLanguages);
 renderSkills("runtime-environments", skillsData.runtimeenvironments);
 renderSkills("tools", skillsData.tools);
 renderSkills("operative-systems", skillsData.operatingSystems);
+renderSkills("frameworks", skillsData.frameworks);
 renderCertificates(certificatesData);
 
 window.addEventListener("load", () => {
@@ -80,3 +81,15 @@ window.addEventListener("load", () => {
     preloader.style.display = "none";
   }, 500);
 });
+
+const isMobile =
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+
+const cssFile = isMobile ? "androidonly.css" : "style.css"; // Cambia 'mobile.css' por 'androidonly.css' si quieres
+
+const link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = cssFile;
+document.head.appendChild(link);
