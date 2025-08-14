@@ -8,6 +8,24 @@ const container = document.querySelector(".container");
 const tabs = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".tab-content");
 
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((btn) => btn.classList.remove("active"));
+    tab.classList.add("active");
+
+    const tabId = tab.dataset.tab;
+    contents.forEach((content) => {
+      if (content.id === tabId) {
+        content.classList.add("active");
+
+        content.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        content.classList.remove("active");
+      }
+    });
+  });
+});
+
 tabsContainer.addEventListener("click", (e) => {
   const clicked = e.target.closest(".tab-btn");
   if (!clicked) return;
@@ -44,7 +62,7 @@ const closeBtn = modal.querySelector(".close-btn");
 
 function closeModal() {
   modal.classList.add("closing");
-  modal.parentElement.classList.add("closing"); // modal-overlay
+  modal.parentElement.classList.add("closing");
 
   modal.addEventListener(
     "animationend",
@@ -76,8 +94,14 @@ window.addEventListener("load", () => {
   preloader.style.opacity = "0";
   preloader.style.pointerEvents = "none";
 
-  // Para que desaparezca con transición suave
   setTimeout(() => {
     preloader.style.display = "none";
   }, 500);
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const tabsMenu = document.querySelector(".tabs");
+
+menuToggle.addEventListener("click", () => {
+  tabsMenu.classList.toggle("show");
 });
