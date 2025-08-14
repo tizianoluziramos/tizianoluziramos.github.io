@@ -487,15 +487,145 @@ p {
   display: block;
   margin: 0 auto 1rem auto;
 }
+/* ========================================
+   📱 Mobile & Tablet Media Queries
+   ======================================== */
 
-@media (max-width: 600px) {
-  #coding-stats img {
-    max-width: 200px;
+/* -------- Tablets y celulares grandes (≤ 768px) -------- */
+@media (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tab-btn {
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .project img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 60px;
+  }
+
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .certificate {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificate-image {
+    width: 50%;
   }
 }
 
-@media (max-width: 400px) {
-  #coding-stats img {
-    max-width: 150px;
+/* -------- Celulares estándar (≤ 480px) -------- */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 0.8rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .tabs {
+    gap: 0.3rem;
+  }
+
+  .tab-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 0.6rem;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project h3 {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .skill-item {
+    width: 50px;
+  }
+
+  .skill-item img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .certificate-info h3 {
+    font-size: 1rem;
+  }
+
+  .certificate-info p {
+    font-size: 0.85rem;
+  }
+}
+
+/* -------- Celulares pequeños (≤ 360px) -------- */
+@media (max-width: 360px) {
+  html {
+    font-size: 13px;
+  }
+
+  .tab-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .project img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill-item {
+    width: 45px;
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
   }
 }
