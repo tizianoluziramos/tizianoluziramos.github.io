@@ -183,6 +183,10 @@ p {
   user-select: none;
 }
 
+.skill-item:first-child {
+  margin-right: 0.5%;
+}
+
 .skill-item img {
   width: 60px;
   height: 60px;
@@ -644,6 +648,9 @@ p {
   }
   .skill-item {
     width: 60px;
+  }
+  .skill-item:first-child {
+    margin-right: 0.5%;
   }
   .skill-item img {
     width: 50px;
