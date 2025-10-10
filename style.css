@@ -249,7 +249,7 @@ p {
 
 .skill-item {
   cursor: pointer;
-  width: 70px;
+  flex: 0 1 100px; /* ancho flexible, mínimo 0, crecer hasta 100px */
   text-align: center;
   user-select: none;
 }
