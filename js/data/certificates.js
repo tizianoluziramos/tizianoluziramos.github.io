@@ -6,18 +6,54 @@ export const certificatesData = {
       description: "Certified in Full Stack development.",
     },
   ],
-  "C++": [
+  "front-end": [
     {
-      name: "C++ Microsoft Certified",
-      image: "/assets/certificates/cpp/microsoft_1.png",
-      description: "Official C++ Microsoft Certification.",
+      name: "University Front-End Developer",
+      image: "/assets/certificates/front_end/udemy_1.jpg",
+      description: "Certified in Front-End development.",
+    },
+    {
+      name: "Front-End Developer",
+      image: "/assets/certificates/front_end/udemy_2.jpg",
+      description: "Certified in Front-End development.",
+    },
+  ],
+  Tools: [
+    {
+      name: "Master in Postman",
+      image: "/assets/certificates/Tools/postman_1.jpg",
+      description: "Certified in Postman.",
+    },
+    {
+      name: "Git certification",
+      image: "/assets/certificates/tools/git_1.jpg",
+      description: "Certified in Git.",
+    },
+  ],
+  "Ethical Hacking": [
+    {
+      name: "Kali Linux Ethical Hacking",
+      image: "/assets/certificates/ethical_hacking/udemy_1.jpg",
+      description: "Certified in Ethical Hacking with Kali Linux.",
+    },
+    {
+      name: "Ethical Hacking in Windows",
+      image: "/assets/certificates/ethical_hacking/udemy_2.jpg",
+      description: "Certified in Ethical Hacking in Windows.",
+    },
+  ],
+  "C#": [
+    {
+      name: "C# Microsoft Certified",
+      image: "/assets/certificates/csharp/microsoft_1.png",
+      description: "Official C# Microsoft Certification.",
     },
   ],
   "Runtime Environments": [
     {
       name: "Nodejs: All You Need to know with Practical Project",
       image: "/assets/certificates/environments/nodejs_1.pdf",
-      description: "Node"
+      description: "Node",
     },
   ],
   Scrum: [

@@ -2,6 +2,7 @@ import { skillsData } from "./data/skillsData.js";
 import { certificatesData } from "./data/certificates.js";
 import { renderCertificates } from "./functions/renderCertificates.js";
 import { renderSkills } from "./functions/renderSkills.js";
+import { translations } from "./data/translations.js";
 
 const tabsContainer = document.querySelector(".tabs");
 const container = document.querySelector(".container");
@@ -17,8 +18,6 @@ tabs.forEach((tab) => {
     contents.forEach((content) => {
       if (content.id === tabId) {
         content.classList.add("active");
-
-        content.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
         content.classList.remove("active");
       }
@@ -104,4 +103,26 @@ const tabsMenu = document.querySelector(".tabs");
 
 menuToggle.addEventListener("click", () => {
   tabsMenu.classList.toggle("show");
+});
+
+const langSelect = document.getElementById("lang-select");
+
+langSelect.addEventListener("change", (e) => {
+  const lang = e.target.value;
+
+  document.querySelectorAll("[data-key]").forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+
+  // Guardar preferencia en localStorage
+  localStorage.setItem("preferredLang", lang);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("preferredLang") || "en";
+  langSelect.value = savedLang;
+  langSelect.dispatchEvent(new Event("change"));
 });

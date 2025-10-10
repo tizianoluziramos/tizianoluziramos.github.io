@@ -53,16 +53,35 @@
     <div id="preloader">
       <div class="spinner"></div>
     </div>
+
     <div class="container">
+      <select id="lang-select" class="lang-select">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
       <button id="menu-toggle" class="menu-toggle">☰ Menu</button>
       <div class="tabs">
-        <button class="tab-btn active" data-tab="about-me">About Me</button>
-        <button class="tab-btn" data-tab="skills">Skills</button>
-        <button class="tab-btn" data-tab="social-media">Social media</button>
-        <button class="tab-btn" data-tab="projects">Projects</button>
-        <button class="tab-btn" data-tab="certificates">Certificates</button>
-        <button class="tab-btn" data-tab="coding-stats">My coding stats</button>
-        <button class="tab-btn" data-tab="contact">Contact</button>
+        <button class="tab-btn active" data-tab="about-me" data-key="about-me">
+          About Me
+        </button>
+        <button class="tab-btn" data-tab="skills" data-key="skills">
+          Skills
+        </button>
+        <button class="tab-btn" data-tab="social-media" data-key="social-media">
+          Social media
+        </button>
+        <button class="tab-btn" data-tab="projects" data-key="projects">
+          Projects
+        </button>
+        <button class="tab-btn" data-tab="certificates" data-key="certificates">
+          Certificates
+        </button>
+        <button class="tab-btn" data-tab="coding-stats" data-key="coding-stats">
+          My coding stats
+        </button>
+        <button class="tab-btn" data-tab="contact" data-key="contact">
+          Contact
+        </button>
       </div>
 
       <div id="coding-stats" class="tab-content">
@@ -103,8 +122,8 @@
       </div>
 
       <div id="contact" class="tab-content">
-        <h2>Contact Me</h2>
-        <p>
+        <h2 data-key="contactTitle">Contact Me</h2>
+        <p data-key="contactText">
           If you have any questions or just want to say hi, feel free to contact
           me:
         </p>
@@ -228,19 +247,19 @@
       </div>
 
       <div id="about-me" class="tab-content active">
-        <h2>Hi, I'm Tiziano Tomas Luzi Ramos</h2>
-        <p>
+        <h2 data-key="aboutMeTitle">Hi, I'm Tiziano Tomas Luzi Ramos</h2>
+        <p data-key="aboutMeText1">
           I'm a passionate developer who loves creating clean and functional web
           experiences. When I'm not coding, you'll find me exploring new tech
           trends or enjoying some good music.
         </p>
-        <p>
+        <p data-key="aboutMeText2">
           Outside of programming, I’m interested in gaming, open source
           contributions, and occasionally dabbling in UI/UX. I'm always open to
           collaborations and new opportunities — feel free to reach out!
         </p>
-        <h2>Dedications:</h2>
-        <p>A very good Back-End developer.</p>
+        <h2 data-key="aboutMeText3">Dedications:</h2>
+        <p data-key="aboutMeText4">A very good Back-End developer.</p>
       </div>
 
       <div id="social-media" class="tab-content">

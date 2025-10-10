@@ -35,7 +35,17 @@ export const skillsData = {
     {
       name: "C++",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-      projects: [],
+    },
+    {
+      name: "C#",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+      certifications: [
+        {
+          name: "C# Microsoft Certified",
+          image: "/assets/certificates/csharp/microsoft_1.png",
+          description: "Official C# Microsoft Certification.",
+        },
+      ],
     },
     {
       name: "Front-End",
@@ -84,6 +94,13 @@ export const skillsData = {
     {
       name: "Git",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      certifications: [
+        {
+          name: "Git certification",
+          image: "/assets/certificates/tools/git_1.jpg",
+          description: "Certified in Git.",
+        },
+      ],
     },
     {
       name: "Docker",
@@ -104,6 +121,12 @@ export const skillsData = {
     {
       name: "Postman",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      certifications: [
+        {
+          name: "Master in Postman",
+          image: "/assets/certificates/Tools/postman_1.jpg",
+        },
+      ],
     },
     {
       name: "VSCode",
@@ -116,8 +139,15 @@ export const skillsData = {
   ],
   operatingSystems: [
     {
-      name: "Linux",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      name: "Kali Linux",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kalilinux/kalilinux-original.svg",
+      certifications: [
+        {
+          name: "Kali Linux Certified Professional",
+          image: "/assets/certificates/ethical_hacking/udemy_1.jpg",
+          description: "Certified in Kali Linux.",
+        },
+      ],
     },
     {
       name: "MS-DOS",
@@ -126,6 +156,13 @@ export const skillsData = {
     {
       name: "Windows",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
+      certifications: [
+        {
+          name: "Ethical hacking in Windows",
+          image: "/assets/certificates/ethical_hacking/udemy_2.jpg",
+          description: "Certified in Ethical Hacking in Windows.",
+        },
+      ],
     },
   ],
 };

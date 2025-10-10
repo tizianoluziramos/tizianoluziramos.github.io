@@ -6,15 +6,26 @@ function openModal(skill) {
   modalTitle.textContent = skill.name;
   modalProjects.innerHTML = "";
 
-  if (skill.projects.length === 0) {
-    modalProjects.innerHTML = "<li>There is no projects registered.</li>";
+  // Detecta si es projects o certifications
+  const items = skill.projects ?? skill.certifications ?? [];
+  const label = skill.projects ? "projects" : "certifications";
+
+  // Cambia la clase del contenedor para aplicar estilos correctos
+  modalProjects.className = label + "-list";
+
+  if (items.length === 0) {
+    modalProjects.innerHTML = `<li>There are no ${label} registered.</li>`;
   } else {
-    skill.projects.forEach((proj) => {
+    items.forEach((item) => {
       const li = document.createElement("li");
       li.innerHTML = `
-        <div class="project-item">
-          <div class="project-title">${proj.name}</div>
-          <img src="${proj.image}" alt="${proj.name}" class="project-image">
+        <div class="${label}-item">
+          <div class="${label}-title">${item.name}</div>
+          ${
+            item.image
+              ? `<img src="${item.image}" alt="${item.name}" class="${label}-image">`
+              : ""
+          }
         </div>
       `;
       modalProjects.appendChild(li);
@@ -32,7 +43,12 @@ export function renderSkills(containerId, skills) {
     div.classList.add("skill-item");
     div.setAttribute("tabindex", "0");
     div.setAttribute("role", "button");
-    div.setAttribute("aria-label", `See projects with ${skill.name}`);
+
+    // aria-label dinámico según projects o certifications
+    div.setAttribute(
+      "aria-label",
+      `See ${skill.projects ? "projects" : "certifications"} with ${skill.name}`
+    );
 
     div.innerHTML = `
       <img src="${skill.logo}" alt="${skill.name} logo" />
