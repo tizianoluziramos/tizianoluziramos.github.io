@@ -6,28 +6,11 @@ export const certificatesData = {
       description: "Certified in Full Stack development.",
     },
   ],
-  "front-end": [
-    {
-      name: "University Front-End Developer",
-      image: "/assets/certificates/front_end/udemy_1.jpg",
-      description: "Certified in Front-End development.",
-    },
-    {
-      name: "Front-End Developer",
-      image: "/assets/certificates/front_end/udemy_2.jpg",
-      description: "Certified in Front-End development.",
-    },
-  ],
   Tools: [
     {
       name: "Master in Postman",
       image: "/assets/certificates/Tools/postman_1.jpg",
       description: "Certified in Postman.",
-    },
-    {
-      name: "Git certification",
-      image: "/assets/certificates/tools/git_1.jpg",
-      description: "Certified in Git.",
     },
   ],
   "Ethical Hacking": [
