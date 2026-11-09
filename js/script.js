@@ -80,11 +80,6 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-renderSkills("programming-languages", skillsData.programmingLanguages);
-renderSkills("runtime-environments", skillsData.runtimeenvironments);
-renderSkills("tools", skillsData.tools);
-renderSkills("operative-systems", skillsData.operatingSystems);
-renderSkills("frameworks", skillsData.frameworks);
 renderSkills("agilemethodologies", skillsData.agileMethodologies);
 renderSkills("databases", skillsData.databases);
 renderCertificates(certificatesData);
